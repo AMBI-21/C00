@@ -1,6 +1,5 @@
 #!/bin/bash
-read  "Entrez le nom du fichier :"
-#nom_fichier
+read -p "Entrez le nom du fichier : " nom_fichier
 if [ -f "$nom_fichier" ];then
 	echo "Le ficher `$nom_fichier` existe."
 else
